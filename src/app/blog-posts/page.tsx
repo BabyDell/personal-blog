@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
-import { ExtractedContent } from "@/utils/getContent";
+import { ExtractedContent } from "@/utils/getAllContent";
 import { getAllContent } from "@/utils/getAllContent";
 
 export default async function BlogPage() {
