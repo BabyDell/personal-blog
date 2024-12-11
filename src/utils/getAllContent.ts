@@ -1,7 +1,6 @@
-import fs from 'fs';
+import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
-
 
 interface ContentSection {
   title: string;
@@ -18,8 +17,14 @@ export interface ExtractedContent {
   content: ContentSection[];
 }
 
+
 export function getAllContent(contentType: string): ExtractedContent[] {
-    const contentDirectory = path.join(process.cwd(), "src", "content", contentType);
+  const contentDirectory = path.join(
+    process.cwd(),
+    "src",
+    "content",
+    contentType
+  );
   const fileNames = fs.readdirSync(contentDirectory);
 
   const allContent = fileNames.map((fileName) => {
@@ -36,10 +41,10 @@ export function getAllContent(contentType: string): ExtractedContent[] {
     for (let section of sections) {
       section = section.trim();
       if (section) {
-        const [title, ...contentParts] = section.split('\n');
+        const [title, ...contentParts] = section.split("\n");
         contentSections.push({
-          title: title.replace(/^##\s+/, '').trim(),
-          content: contentParts.join('\n').trim()
+          title: title.replace(/^##\s+/, "").trim(),
+          content: contentParts.join("\n").trim(),
         });
       }
     }
@@ -58,4 +63,3 @@ export function getAllContent(contentType: string): ExtractedContent[] {
   // Sort posts by date
   return allContent.sort((a, b) => (a.date > b.date ? -1 : 1));
 }
-
