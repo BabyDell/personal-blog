@@ -4,7 +4,7 @@ import { ArrowLeft } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
-import { ExtractedContent } from "@/utils/getContent";
+import { ExtractedContent } from "@/utils/getAllContent";
 
 export default function CaseStudyTemplate({
   title,
