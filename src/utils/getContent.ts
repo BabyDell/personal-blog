@@ -17,10 +17,10 @@ export interface ExtractedContent {
   content: ContentSection[];
 }
 
-export async function getContent(
+export function getContent(
   contentType: string,
   slug: string
-): Promise<ExtractedContent> {
+): ExtractedContent {
   const markdownWithMeta = fs.readFileSync(
     path.join("src", "content", contentType, `${slug}.md`),
     "utf-8"

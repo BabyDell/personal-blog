@@ -18,8 +18,8 @@ export interface ExtractedContent {
   content: ContentSection[];
 }
 
-export async function getAllContent(contentType: string): Promise<ExtractedContent[]> {
-  const contentDirectory = path.join(process.cwd(), "src", "content", contentType);
+export function getAllContent(contentType: string): ExtractedContent[] {
+    const contentDirectory = path.join(process.cwd(), "src", "content", contentType);
   const fileNames = fs.readdirSync(contentDirectory);
 
   const allContent = fileNames.map((fileName) => {
