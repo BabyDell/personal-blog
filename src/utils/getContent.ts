@@ -35,14 +35,13 @@ export function getContent(
   for (let section of sections) {
     section = section.trim();
     if (section) {
-      const [title, ...contentParts] = section.split('\n');
+      const [title, ...contentParts] = section.split("\n");
       contentSections.push({
-        title: title.replace(/^##\s+/, '').trim(),
-        content: contentParts.join('\n').trim()
+        title: title.replace(/^##\s+/, "").trim(),
+        content: contentParts.join("\n").trim(),
       });
     }
   }
-
 
   return {
     id: slug,
@@ -54,4 +53,3 @@ export function getContent(
     content: contentSections,
   };
 }
-
