@@ -61,8 +61,6 @@ import { getAllContent, ExtractedContent } from './getAllContent';
 export async function getContent(contentType: string, slug: string): Promise<ExtractedContent | undefined> {
   // Get all content for the specified type
   const allContent = getAllContent(contentType);
-  console.log(allContent);
-  console.log(slug);
 
   // Find the content item with the matching slug
   const content = allContent.find(item => item.id === slug);
