@@ -5,6 +5,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 1);
 }
 
 @layer base {
@@ -85,3 +86,56 @@ body {
 .animate-underline:hover::after {
   width: 1.5rem; /* equivalent to w-6 */
 }
+
+/* image slider */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-50% - 1rem)); /* Adjust for the gap between items */
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide {
+  animation: slide var(--animation-duration, 15s) linear infinite;
+  animation-play-state: var(--animation-play-state, running);
+  will-change: transform;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.case-study-content {
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.image-slider {
+  animation: autoRun 12s linear infinite;
+}
+
+.image-slider.paused {
+  animation-play-state: paused;
+}
+
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -850px;
+  }
+}
+

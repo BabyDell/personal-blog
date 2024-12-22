@@ -46,8 +46,8 @@ export default function NavBar() {
   return (
     <>
       <header
-        className={`py-8 fixed px-4 lg:px-16 h-14 w-full flex items-center justify-between transition-colors duration-500 z-50 ${
-          scrolled ? "bg-black text-white" : "bg-transparent"
+        className={`py-8 fixed px-4 lg:px-16 h-14 w-full flex items-center justify-between transition-colors text-white duration-500 z-50 ${
+          scrolled ? "bg-zinc-900" : "bg-transparent"
         }`}
       >
         <Link className="flex items-center justify-center" href="/">
@@ -75,17 +75,17 @@ export default function NavBar() {
           <div
             className={`w-7 h-[3px] my-1.5 transition-transform duration-300 ${
               isMenuOpen ? "transform translate-y-[9px] -rotate-45" : ""
-            } ${scrolled ? "bg-white" : "bg-gray-800"}`}
+            } ${scrolled ? "bg-white" : "bg-white"}`}
           />
           <div
             className={`w-7 h-[3px] my-1.5 transition-transform duration-300 ${
               isMenuOpen ? "opacity-0" : ""
-            } ${scrolled ? "bg-white" : "bg-gray-800"}`}
+            } ${scrolled ? "bg-white" : "bg-white"}`}
           />
           <div
             className={`w-7 h-[3px] my-1.5 transition-transform duration-300 ${
               isMenuOpen ? "transform -translate-y-[9px] rotate-45" : ""
-            } ${scrolled ? "bg-white" : "bg-gray-800"}`}
+            } ${scrolled ? "bg-white" : "bg-white"}`}
           />
         </button>
       </header>
