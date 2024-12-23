@@ -18,10 +18,11 @@ export default async function RecentBlogPosts() {
 
   return (
     <section id="blog-posts" className="w-full py-12 md:py-24 lg:py-32 ">
-      <div className="container px-4 md:px-6">
-        <h2 className="text-4xl mb-10 font-Playfair_Display">
+      <h1 className="text-3xl sm:text-4xl mb-10 ml-10 sm:ml-14 md:ml-20 font-Playfair_Display">
           Recent Blog Posts
-        </h2>
+        </h1>
+      <div className="container px-6 md:px-20 mx-auto md:mx-0">
+        
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {recentBlogPosts.map((blog: ExtractedContent) => (
             <Card key={blog.id} className="bg-transparent border-opacity-30 border-white hover:border-opacity-55 transition-all duration-500">

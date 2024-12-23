@@ -16,12 +16,12 @@ export default function CaseStudyTemplate({
   return (
     <div className="flex flex-col min-h-screen text-foreground">
       <main className="flex-1 flex m-auto">
-        <div className="max-w-7xl w-full flex flex-col lg:flex-row gap-8 pb-10 mx-10 justify-center items-center">
+        <div className="max-w-7xl w-full flex flex-col lg:flex-row gap-8 pb-10 mx-5 sm:mx-8 justify-center items-center">
           <article className="lg:w-4/5 mx-auto">
             <div className="space-y-4">
-              <Button variant="ghost" asChild className="mb-4">
+              <Button variant="ghost" asChild className="mt-4">
                 <Link
-                  className="group text-white hover:text-white hover:bg-transparent"
+                  className="group text-white hover:text-white hover:bg-transparent "
                   href="/case-studies"
                 >
                   <ArrowLeft className="mr-1 h-4 w-4 group-hover:-translate-x-1 transition-transform " />

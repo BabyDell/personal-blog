@@ -9,9 +9,8 @@ export default function Home() {
     <div className="flex flex-col min-h-screen items-center justify-center text-white">
       <main className="flex-1 w-full items-center justify-center ">
         <section className="w-full py-40 md:py-52 xl:py-64 relative overflow-hidden">
-          
           <div className="absolute inset-0">
-          <DynamicGridBackground2D />
+            <DynamicGridBackground2D />
           </div>
           <div className="container px-10 md:px-6 mx-auto relative z-10">
             <div className="flex flex-col items-center space-y-4 text-center">
@@ -26,11 +25,11 @@ export default function Home() {
                   progress in web development and design.
                 </p>
               </div>
-              <div className="space-x-4">
-                <Button asChild>
+              <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+                <Button className="w-full sm:w-auto" asChild>
                   <Link href="/case-studies">Explore Case Studies</Link>
                 </Button>
-                <Button variant="outline" asChild>
+                <Button variant="outline" className="w-full sm:w-auto" asChild>
                   <Link href="/blog-posts" className="text-black">
                     Read Blog Posts
                   </Link>
@@ -41,7 +40,7 @@ export default function Home() {
         </section>
         <CaseStudiesContainer />
         <RecentBlogPosts />
-     
+
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6 mx-auto">
             <div className="flex flex-col items-center space-y-4 text-center">
@@ -54,12 +53,14 @@ export default function Home() {
                   say hello!
                 </p>
               </div>
-              <div className="space-x-4">
-                <Button variant="outline" className="text-black"  asChild>
-                  <Link href="#contact">Get in Touch</Link>
+              <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
+                <Button className="w-full sm:w-auto" asChild>
+                  <Link href="/contact">Get In Touch</Link>
                 </Button>
-                <Button asChild>
-                  <Link href="#portfolio">View Full Portfolio</Link>
+                <Button variant="outline" className="w-full sm:w-auto" asChild>
+                  <Link href="/portfolio" className="text-black">
+                    View Full Portolio
+                  </Link>
                 </Button>
               </div>
             </div>

@@ -18,10 +18,10 @@ export default function TiltedCaseStudiesSlider({
 
   return (
     <div className="w-full pb-20">
-      <h1 className="font-Playfair_Display ml-20 mb-2 text-4xl">
+      <h1 className="font-Playfair_Display ml-10 sm:ml-14 md:ml-20 mb-2 text-3xl sm:text-4xl">
         Featured Case Studies
       </h1>
-      <h3 className="font-serif ml-20 mb-10 text-xl text-gray-300">
+      <h3 className="font-serif ml-10 sm:ml-14 md:ml-20 mb-10 text-lg sm:text-xl text-gray-300">
         Hover Over to Reveal Details
       </h3>
       <div className="flex w-full h-[calc(450px*9/16)] md:h-[calc(600px*9/16)] lg:h-[calc(850px*9/16)] relative md:min-w-[950px] lg:min-w-[1700px] overflow-hidden">
