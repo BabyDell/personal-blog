@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const navItems = [
   { href: "/case-studies", label: "Case Studies" },
   { href: "/blog-posts", label: "Blog Posts" },
-  { href: "/learning-progress", label: "Learning Progress" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function NavBar() {
@@ -96,7 +96,7 @@ export default function NavBar() {
             animate="open"
             exit="closed"
             variants={menuVariants}
-            className="fixed top-14 left-0 right-0 bg-black text-white z-40 md:hidden overflow-hidden"
+            className="fixed top-14 left-0 right-0 bg-zinc-900 text-white z-40 md:hidden overflow-hidden"
           >
             <nav className="flex flex-col items-center py-4">
               {navItems.map((item, i) => (

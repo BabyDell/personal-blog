@@ -17,7 +17,7 @@ export default function TiltedCaseStudiesSlider({
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="w-full">
+    <div className="w-full pb-20">
       <h1 className="font-Playfair_Display ml-20 mb-2 text-4xl">
         Featured Case Studies
       </h1>
@@ -32,7 +32,7 @@ export default function TiltedCaseStudiesSlider({
             }`}
             key={caseStudy.id}
             style={{
-              animationDelay: `${(12 / 3) * index}s`,
+              animationDelay: `${(15 / 3) * index}s`,
             }}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}

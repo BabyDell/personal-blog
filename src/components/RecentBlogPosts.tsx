@@ -17,16 +17,16 @@ export default async function RecentBlogPosts() {
   const recentBlogPosts = blogPosts.slice(0, 3);
 
   return (
-    <section id="blog-posts" className="w-full py-12 md:py-24 lg:py-32">
+    <section id="blog-posts" className="w-full py-12 md:py-24 lg:py-32 ">
       <div className="container px-4 md:px-6">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 font-Playfair_Display">
+        <h2 className="text-4xl mb-10 font-Playfair_Display">
           Recent Blog Posts
         </h2>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {recentBlogPosts.map((blog: ExtractedContent) => (
-            <Card key={blog.id}>
+            <Card key={blog.id} className="bg-transparent border-opacity-30 border-white hover:border-opacity-55 transition-all duration-500">
               <CardHeader>
-                <CardTitle className="font-Playfair_Display">
+                <CardTitle className="font-Playfair_Display text-white">
                   {blog.title}
                 </CardTitle>
                 <CardDescription>
@@ -34,15 +34,15 @@ export default async function RecentBlogPosts() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-500 dark:text-gray-400 font-serif">
+                <p className="text-gray-400 font-serif">
                   {blog.description}
                 </p>
               </CardContent>
               <CardFooter>
-                <Button variant="ghost" asChild>
+                <Button variant="ghost" className="bg-white" asChild>
                   <Link className="group" href={`/blog-posts/${blog.id}`}>
-                    Read Post{" "}
-                    <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    Read Post
+                    <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform duration-500" />
                   </Link>
                 </Button>
               </CardFooter>

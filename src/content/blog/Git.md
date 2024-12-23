@@ -1,5 +1,5 @@
 ---
-title: "An overview on Git"
+title: "An Overview on Git"
 description: "Learn with me how git works"
 tags:
   - Web Development

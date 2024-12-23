@@ -17,13 +17,13 @@ export default async function CaseStudiesPage() {
   const caseStudies = await getAllContent('case-study');
 
   return (
-    <div className="flex flex-col min-h-screen bg-background text-foreground justify-center items-center">
+    <div className="flex flex-col min-h-screen text-foreground justify-center items-center">
       <main className="flex-1">
         <section className="w-full py-10 lg:py-16">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-Playfair_Display">
+                <h1 className="text-white text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-Playfair_Display">
                   Case Studies
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl font-serif">
@@ -34,13 +34,13 @@ export default async function CaseStudiesPage() {
             </div>
           </div>
         </section>
-        <section className="w-full mb-8 py-12 md:py-16 lg:py-28 bg-muted">
+        <section className="w-full mb-8 py-12 md:py-16">
           <div className="container px-4 md:px-6">
             <div className="grid gap-10 grid-cols-1 lg:grid-cols-2">
               {caseStudies.map((study: ExtractedContent) => (
-                <Card key={study.id} className="flex flex-col">
+                <Card key={study.id} className="flex flex-col bg-transparent  border-opacity-30 border-white hover:border-opacity-55 transition-all duration-500">
                   <CardHeader>
-                    <CardTitle className="font-Playfair_Display tracking-normal">
+                    <CardTitle className="font-Playfair_Display tracking-normal text-white text-xl">
                       {study.title}
                     </CardTitle>
                     <CardDescription className="font-serif">
@@ -59,7 +59,7 @@ export default async function CaseStudiesPage() {
                     </div>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {study.tags.map((tag) => (
-                        <Badge key={tag} variant="secondary">
+                        <Badge key={tag} variant="secondary" className="bg-slate-200">
                           {tag}
                         </Badge>
                       ))}
@@ -70,11 +70,8 @@ export default async function CaseStudiesPage() {
                   </CardContent>
                   <CardFooter>
                     <Button asChild>
-                      <Link
-                        className="group"
-                        href={`/case-studies/${study.id}`}
-                      >
-                        Read Full Case Study{" "}
+                      <Link className="group" href={`/case-studies/${study.id}`}>
+                        Read Full Study
                         <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform duration-500" />
                       </Link>
                     </Button>
