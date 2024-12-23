@@ -37,7 +37,7 @@ export default function ContactPage() {
           {isSubmitted ? (
             <div className="bg-green-500 bg-opacity-20 border border-green-500 rounded-lg p-6 text-center animate-fade-in">
               <h2 className="text-2xl font-bold mb-2">Thank You!</h2>
-              <p>Your message has been sent successfully. I'll get back to you soon.</p>
+              <p>Your message has been sent successfully. I&apos;ll get back to you soon.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6 animate-fade-in">

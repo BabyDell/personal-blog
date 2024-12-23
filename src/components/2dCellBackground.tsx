@@ -94,5 +94,4 @@ export const DynamicGridBackground2D: React.FC = () => {
   )
 }
 
-.5
 
