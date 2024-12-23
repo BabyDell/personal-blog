@@ -17,7 +17,7 @@ export default async function CaseStudiesPage() {
   const caseStudies = await getAllContent('case-study');
 
   return (
-    <div className="flex flex-col min-h-screen text-foreground justify-center items-center">
+    <div className="flex flex-col min-h-screen text-foreground justify-center items-center animate-fade-in">
       <main className="flex-1">
         <section className="w-full py-10 lg:py-16">
           <div className="container px-4 md:px-6">

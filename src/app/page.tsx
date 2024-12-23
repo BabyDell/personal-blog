@@ -6,7 +6,7 @@ import { DynamicGridBackground2D } from "@/components/2dCellBackground";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center text-white">
+    <div className="flex flex-col min-h-screen items-center justify-center text-white animate-fade-in">
       <main className="flex-1 w-full items-center justify-center ">
         <section className="w-full py-40 md:py-52 xl:py-64 relative overflow-hidden">
           <div className="absolute inset-0">
