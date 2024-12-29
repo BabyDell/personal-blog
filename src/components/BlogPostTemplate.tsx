@@ -16,7 +16,7 @@ export default function BlogPostTemplate({
 }: ExtractedContent) {
 
   return (
-    <div className="flex flex-col min-h-screen text-foreground animate-fade-in">
+    <div className="flex flex-col min-h-screen text-foreground animate-fade-in mb-10 sm:mb-20">
       <main className="flex-1 flex m-auto">
         <div className="max-w-7xl w-full flex flex-col lg:flex-row gap-8 pb-10 mx-5 sm:mx-8justify-center items-center">
           <article className="lg:w-4/5 mx-auto">

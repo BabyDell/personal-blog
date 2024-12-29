@@ -6,7 +6,7 @@ tags:
   - Technology Trends
   - Frontend
   - Backend
-imageSrc: "/img/blog/api-image.jpg"
+imageSrc: "/img/blog/api.jpg"
 date: "2024-12-09"
 ---
 
