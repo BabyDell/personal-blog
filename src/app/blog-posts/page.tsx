@@ -28,7 +28,7 @@ export default async function BlogPage() {
                 <h1 className="text-white text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-Playfair_Display">
                   Blog
                 </h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl font-serif">
+                <p className="max-w-[600px] text-muted-foreground md:text-xl font-serif mx-10">
                   Explore our latest articles, insights, and updates.
                 </p>
               </div>

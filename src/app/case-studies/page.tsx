@@ -26,7 +26,7 @@ export default async function CaseStudiesPage() {
                 <h1 className="text-white text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none font-Playfair_Display">
                   Case Studies
                 </h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl font-serif">
+                <p className="max-w-[600px] text-muted-foreground md:text-xl font-serif mx-10">
                   Explore detailed breakdowns of my most impactful projects and
                   their outcomes.
                 </p>
