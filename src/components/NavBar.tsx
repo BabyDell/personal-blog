@@ -60,7 +60,7 @@ export default function NavBar() {
           {navItems.map((item) => (
             <Link
               key={item.href}
-              className="text-sm font-medium relative animate-underline"
+              className="text-md font-semibold relative animate-underline"
               href={item.href}
             >
               {item.label}

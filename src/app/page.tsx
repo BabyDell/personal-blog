@@ -6,17 +6,17 @@ import { DynamicGridBackground2D } from "@/components/2dCellBackground";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center text-white animate-fade-in">
+    <div className="flex flex-col min-h-screen items-center justify-center text-white animate-fade-in ">
       <main className="flex-1 w-full items-center justify-center ">
-        <section className="w-full py-40 md:py-52 xl:py-64 relative overflow-hidden">
+        <section className="w-full py-40 md:py-52 xl:py-64 relative">
           <div className="absolute inset-0">
             <DynamicGridBackground2D />
           </div>
-          <div className="container px-10 md:px-6 mx-auto relative z-10">
-            <div className="flex flex-col items-center space-y-4 text-center">
-              <div className="space-y-2">
+          <div className="container px-10 md:px-6 mx-auto relative z-10 ">
+            <div className="flex flex-col items-center space-y-4 text-center ">
+              <div className="space-y-2 ">
                 <h1 className="text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl/none font-Playfair_Display ">
-                  <span className="font-extrabold">Welcome </span>
+                  <span className="font-extrabold">Welcome</span>
                   <br />
                   To My Personal Blog
                 </h1>

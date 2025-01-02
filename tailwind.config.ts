@@ -17,6 +17,7 @@ export default {
 			Syncopate: ["Syncopate", "sans-serif"]
 		},
   		colors: {
+			'custom-gray': '#131414',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -57,6 +58,7 @@ export default {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
+			
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
