@@ -55,7 +55,7 @@ export default async function BlogPage() {
                         alt={post.title}
                         width={600}
                         height={600}
-                        className="rounded-lg object-fit mb-4"
+                        className="object-fit mb-4"
                       />
                     </div>
                     <div className="flex flex-wrap gap-2 mb-4">
